@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+}/*
+:root{
+
+}*/
+header nav{
+    width: 100%;
+    height: 50px;
+    background-color: blueviolet;
+}
+header nav ul{
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+   flex-wrap: wrap;
+   list-style: none;
+   align-content: space-between;
+}
+header a{
+    padding: 20px;
+    text-decoration: none;
+}
+
+/* seccion de bienvenida*/
+.home{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    height: 15%;
+
+    }
+.home h3{
+    display: flex;
+    width: 600px;
+    height: 500px;
+    color: #dc4b1b;
+    font-size: larger;
+    background-image: url(/recursos/rasge.png);
+    background-size: cover ;
+    position:inherit ;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+.home h1 {
+    color: darkorchid;
+}
+    /*
+    .home img{
+        display: flex;
+        padding-left: 300px;
+    
+    }*/
+
+.circle{
+    float: left;
+    shape-outside: circle(50% at 0 50%);
+    clip-path: circle(50% at 0 50%);
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(#ed5858, #dc4b1b);
+    margin-right: 40px;
+    
+}
+
+
+/* galeria intecrativa */
+.galeyMain{
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+/*
+.galeyMain div{
+    border: solid red 1px;
+    
+}*/
+.main-art{
+    grid-column: 1 / 3;
+    grid-row: 1 / 1;
+    background-color: #F6EF19;
+    height: 400px;
+}
+.galeyMain img{
+    height: 400px;
+    width: 100%;
+}
+.galeyMain img :hover{
+    
+
+}
+.one-art img{
+    height: 525px;
+}
+.five-art img{
+    height: 435px;
+}
+.seven-art img{
+    height: 435px;
+}
+.six-art{
+    align-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    height: 250px;
+}
+
+.eight-art{
+    grid-column: 1 / 4;
+   
+}
+.eight-art img{
+    width: 100%;
+    height: 175px;
+}
+
+/* section ´para los planes de apoyo */
+
+.opt{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.opt section{
+    height: 325px;
+    width: 250px;
+    border: solid;
+    margin: 25px;    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+ 
+}
+ 
+.opt span{
+    margin-top: 30px;
+}
+
+.btn-cat{
+    display: flex;
+    width: 100px;
+    height: 20px;
+    margin-top: 20px;
+    background-color: blue;   
+    align-self: center;
+    justify-content: center;
+}
+.form{
+
+    height: 500px;
+    width: auto;
+    background-color: plum;
+}
+.form form{
+    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+footer{
+    width: auto;
+    height: 300px;
+    background-color: black;
+}
